@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickChart Personalizable</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="chart-container">
+    <!-- Aquí se cargará el gráfico generado por QuickChart.io -->
+</div>
+
+<div class="controls">
+    <!-- Controles de entrada para personalizar el gráfico -->
+    <label for="chart-type">Tipo de Gráfico:</label>
+    <select id="chart-type">
+        <option value="bar">Barras</option>
+        <option value="line">Líneas</option>
+        <option value="pie">Pastel</option>
+        <option value="doughnut">Doughnut</option>
+        <option value="scatter">Dispersión</option>
+        <option value="radar">Radar</option>
+    </select>
+    <label for="chart-title">Título del Gráfico:</label>
+    <input type="text" id="chart-title">
+    <label for="axis-title-x">Título del Eje X:</label>
+    <input type="text" id="axis-title-x">
+    <label for="axis-title-y">Título del Eje Y:</label>
+    <input type="text" id="axis-title-y">
+    <label for="legend-position">Posición de la Leyenda:</label>
+    <select id="legend-position">
+        <option value="top">Arriba</option>
+        <option value="bottom">Abajo</option>
+        <option value="left">Izquierda</option>
+        <option value="right">Derecha</option>
+    </select>
+    <label for="data-labels">Etiquetas:</label>
+    <input type="text" id="data-labels" placeholder="Separadas por comas">
+    <label for="data-values">Valores:</label>
+    <input type="text" id="data-values" placeholder="Separados por comas">
+    <label for="chart-color">Color de Línea/Barras:</label>
+    <input type="text" id="chart-color" placeholder="Código hexadecimal">
+    <label for="font-size">Tamaño de Fuente:</label>
+    <input type="number" id="font-size" min="8" max="24">
+    <button id="update-chart">Actualizar Gráfico</button>
+    <button id="download-chart">Descargar Gráfico</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
